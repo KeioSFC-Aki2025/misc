@@ -1653,14 +1653,14 @@ font-size: 18px !important;
 <span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a>corpus <span class="ot">=</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">&quot;data3_multinomial.csv&quot;</span>, <span class="at">header =</span> T, <span class="at">stringsAsFactors =</span> F,<span class="at">row.names =</span> <span class="cn">NULL</span>, <span class="at">encoding =</span> <span class="st">&quot;UTF-8&quot;</span>)</span></code></pre></div>
 <div id="データの事前確認" class="section level1" number="1">
 <h1><span class="header-section-number">1</span> データの事前確認</h1>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="fu">head</span>(corpus[,<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">5</span><span class="sc">:</span><span class="dv">9</span>) ])</span></code></pre></div>
-<pre><code>##   ID キー   作品名 成立年 性別 y x1_gender
-## 1  1 迎へ 女学雑誌   1894   女 1         0
-## 2  2 隱れ 女学雑誌   1894   女 1         0
-## 3  3 生長 女学雑誌   1894   女 1         0
-## 4  4 同意 女学雑誌   1894   女 1         0
-## 5  5   筆     太陽   1895   女 1         0
-## 6  6 別れ     太陽   1895   女 1         0</code></pre>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="fu">head</span>(corpus)</span></code></pre></div>
+<pre><code>##   ID   作品名 成立年 性別 y x1_gender
+## 1  1 女学雑誌   1894   女 1         0
+## 2  2 女学雑誌   1894   女 1         0
+## 3  3 女学雑誌   1894   女 1         0
+## 4  4 女学雑誌   1894   女 1         0
+## 5  5     太陽   1895   女 1         0
+## 6  6     太陽   1895   女 1         0</code></pre>
 </div>
 <div id="多項ロジスティック回帰モデルの構築" class="section level1" number="2">
 <h1><span class="header-section-number">2</span>
